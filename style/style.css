@@ -22,10 +22,12 @@
 }
 .footer .footer__wrap .footer__wrap-info {
   display: flex;
-  -moz-column-gap: 342px;
-       column-gap: 342px;
+  -moz-column-gap: 317px;
+       column-gap: 317px;
 }
 .footer .footer__wrap .footer__wrap-links {
+  min-width: 513px;
+  width: 100%;
   display: flex;
   -moz-column-gap: 140px;
        column-gap: 140px;
@@ -56,6 +58,8 @@
   margin-bottom: 127px;
 }
 .footer .footer__wrap .footer__wrap-location {
+  min-width: 373px;
+  width: 100%;
   border-bottom: 1px solid hsla(91deg, 28%, 36%, 0.3);
 }
 .footer .footer__wrap .footer__wrap-adress {
@@ -97,6 +101,8 @@
        column-gap: 326px;
 }
 .footer .footer__wrap .footer__wrap-rules {
+  max-width: 504px;
+  width: 100%;
   display: flex;
   -moz-column-gap: 37px;
        column-gap: 37px;

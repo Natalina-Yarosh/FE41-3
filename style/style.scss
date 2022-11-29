@@ -22,9 +22,11 @@
     .footer__wrap {
         .footer__wrap-info {
             display: flex;
-            column-gap: 342px; 
+            column-gap: 317px; 
         }
         .footer__wrap-links {
+            min-width: 513px;
+            width: 100%;
             display: flex;
             column-gap: 140px;
             border-bottom: 1px solid  hsl(91, 28%, 36%, 0.3);
@@ -60,6 +62,8 @@
             }
         }
         .footer__wrap-location {
+            min-width: 373px;
+            width: 100%;
             border-bottom: 1px solid  hsl(91, 28%, 36%, 0.3);
         }
         .footer__wrap-adress{
@@ -102,6 +106,8 @@
             column-gap: 326px;
         }
         .footer__wrap-rules {
+            max-width: 504px;
+            width: 100%;
             display: flex;
             column-gap: 37px;
         }

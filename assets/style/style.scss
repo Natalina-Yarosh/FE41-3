@@ -1,0 +1,112 @@
+@import "reset";
+
+
+$Forum: 'Forum', cursive;
+$Lato: 'Lato', sans-serif;
+
+  .container {
+    max-width: 1650px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+  }
+  /*   Header   */
+  .header {
+  padding-top: 81px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+background-color: rgba(0, 0, 0, 0.);
+
+  @media (max-width: 1440px) {
+    padding-top: 60px;
+}
+&__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+&__logo {
+    display: block;
+
+    @media (max-width: 1440px) {
+        display: none;
+    }
+   
+    &-tablet {
+        display: none;
+        
+        @media (max-width: 1440px) {
+            display: block;
+        }
+    }
+}
+}
+
+&__profile {
+    display: block;
+    
+    @media (max-width: 1440px) {
+            max-width: 45px;
+            max-height: 45px;
+            align-items: center;
+        }
+}
+&__menu {
+    display: flex;
+    column-gap: 60px;
+
+    &__item {
+       position: relative;
+
+  &::after {
+  position: absolute;
+  content: "";
+  left: -2px;
+  top: 0;
+  width: calc(100% + 4px);
+  height: 100%;
+  border-bottom: 2px solid transparent;
+  transition: all .3s ease-in-out;
+  z-index: -1;
+  }
+  
+  &:hover::after {
+    border-bottom: 2px solid #e8665f;
+}
+&:active::after {
+    border-bottom: 2px solid #E71414;
+}
+}
+
+&__link {
+        text-decoration: none;
+        font-family: $Lato;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        flex: none;
+        flex-grow: 0;
+        
+        @media (max-width: 1440px) {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        
+        &:hover {
+        color: #e8665f;
+
+        }
+        &:active {
+        color: #E71414;
+        }
+    }
+}
+}

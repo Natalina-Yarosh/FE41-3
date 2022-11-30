@@ -16,26 +16,24 @@
         display: flex;
         column-gap: 320px;
     }
-    .footer__logo {
-
-    }
     .footer__wrap {
+        width: 100%;
         .footer__wrap-info {
             display: flex;
-            column-gap: 317px; 
+            justify-content: space-between; 
         }
         .footer__wrap-links {
-            min-width: 513px;
+            max-width: 513px;
             width: 100%;
             display: flex;
             column-gap: 140px;
             border-bottom: 1px solid  hsl(91, 28%, 36%, 0.3);
         }
         .footer__wrap-menu {
-            
+            margin-bottom: 127px;
         }
         .footer__wrap-help {
-           
+            margin-bottom: 215px;
         }
         .footer__wrap-heading {
             font-family: 'Lato',sans-serif;
@@ -47,7 +45,16 @@
             color: #2F2F2F;
             margin-bottom: 25px;
         }
-        .footer__wrap-link {
+        .footer__menu {
+            list-style-type: none;
+        }
+        .footer__menu-item {
+            margin-bottom: 20px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+        .footer__menu-link {
             display: block;
             font-family: 'Lato',sans-serif;
             font-weight: 400;
@@ -56,17 +63,18 @@
             letter-spacing: 0.01em;
             text-transform: uppercase;
             color: #2F2F2F;
-            margin-bottom: 20px;
-            &:last-of-type {
-                margin-bottom: 127px;
-            }
+            
         }
         .footer__wrap-location {
-            min-width: 373px;
+            max-width: 373px;
             width: 100%;
             border-bottom: 1px solid  hsl(91, 28%, 36%, 0.3);
+            padding-bottom: 93px;
         }
-        .footer__wrap-adress{
+        .footer__wrap-adress {
+            margin-bottom: 50px;
+        }
+        .footer__city{
             font-family: 'Lato',sans-serif;
             font-weight: 400;
             font-size: 16px;
@@ -76,7 +84,7 @@
             color: #2F2F2F;
             margin-bottom: 15px;
         }
-        .footer__wrap-timetable {
+        .footer__timetable {
             font-family: 'Lato',sans-serif;
             font-weight: 400;
             font-size: 15px;
@@ -92,8 +100,8 @@
             display: flex;
             column-gap: 20px;
             align-items: center;
-            margin-bottom: 93px;
         }
+        
         .footer__social-link {
             width: 30px;
             height: 30px;
@@ -106,10 +114,10 @@
         }
         .footer__wrap-bottom {
             display: flex;
-            column-gap: 326px;
+            justify-content: space-between;
         }
         .footer__wrap-rules {
-            max-width: 504px;
+            max-width: 513px;
             width: 100%;
             display: flex;
             column-gap: 37px;
@@ -131,7 +139,8 @@
             color: rgba(60, 61, 61, 0.4);
         }
         .footer__wrap-author {
-
+            max-width: 373px;
+            width: 100%;
         }
         .footer__wrap-photographer {
             font-family: 'Lato', sans-serif;

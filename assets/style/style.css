@@ -67,17 +67,17 @@ input, button, textarea, select {
   padding: 0 15px;
   text-align: center;
 }
-@media (min-width: 769px) and (max-width: 1440px) {
+@media (min-width: 1440px) and (max-width: 1919px) {
   .container {
     max-width: 1270px;
   }
 }
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .container {
     max-width: 766px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .container {
     max-width: 318px;
   }
@@ -85,18 +85,26 @@ input, button, textarea, select {
 
 /*   Header   */
 .header {
-  padding-top: 81px;
+  margin-top: 81px;
   position: fixed;
   width: 100%;
   z-index: 10;
-  /*@media (min-width: 321px) and (max-width: 768px) {
-   display: none;
-   }*/
   background-color: rgba(0, 0, 0, 0.5);
 }
-@media (min-width: 769px) and (max-width: 1440px) {
+@media (min-width: 1440px) and (max-width: 1919px) {
   .header {
-    padding-top: 60px;
+    margin-top: 70px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .header {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    position: absolute;
+    margin-top: 50px;
   }
 }
 .header__head {
@@ -108,8 +116,6 @@ input, button, textarea, select {
   display: inline-block;
   width: 96px;
   height: 49px;
-  align-items: center;
-  justify-content: center;
 }
 .header__head__logo__img {
   height: 100%;
@@ -117,56 +123,54 @@ input, button, textarea, select {
   -o-object-fit: contain;
      object-fit: contain;
 }
-@media (min-width: 321px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .header__head__logo {
     width: 72px;
     height: 37px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .header__head__logo {
     max-width: 30px;
     max-height: 16px;
   }
 }
-.header__profile__logo {
-  display: inline-block;
+.header__profile {
+  display: flex;
   max-width: 70px;
   max-height: 70px;
-  align-items: center;
-  justify-content: center;
 }
-.header__profile__logo__img {
+.header__profile__img {
   height: 100%;
   width: 100%;
   transition: all 0.3s ease-in-out;
 }
-.header__profile__logo__img:hover {
+.header__profile__img:hover {
   fill: #e8665f;
   transform: scale(1.2);
 }
-.header__profile__logo__img:active {
+.header__profile__img:active {
   fill: #E71414;
 }
-@media (min-width: 769px) and (max-width: 1440px) {
-  .header__profile__logo {
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .header__profile {
     max-width: 45px;
     max-height: 45px;
   }
 }
-@media (min-width: 321px) and (max-width: 768px) {
-  .header__profile__logo {
+@media (min-width: 768px) and (max-width: 1439px) {
+  .header__profile {
     max-width: 40px;
     max-height: 40px;
   }
 }
-@media (max-width: 320px) {
-  .header__profile__logo {
+@media (max-width: 767px) {
+  .header__profile {
     max-width: 24px;
     max-height: 24px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1439px) {
   .header__head__navbar {
     display: none;
   }
@@ -191,7 +195,7 @@ input, button, textarea, select {
   transition: all 0.3s ease-in-out;
   position: relative;
 }
-@media (min-width: 769px) and (max-width: 1440px) {
+@media (min-width: 1440px) and (max-width: 1919px) {
   .header__menu__link {
     font-size: 12px;
     line-height: 18px;
@@ -228,12 +232,12 @@ input, button, textarea, select {
   width: 100%;
   height: 100%;
 }
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .header__hamburger {
     display: block;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .header__hamburger {
     display: block;
     max-width: 22px;

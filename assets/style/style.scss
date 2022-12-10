@@ -8,18 +8,17 @@ $Lato: 'Lato', sans-serif;
     max-width: 1650px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
     text-align: center;
-// -767, 768-1439, 1440-1919, 1920+
     @media (min-width: 1440px) and (max-width: 1919px) {
         max-width: 1270px;
     }
-    @media (min-width: 768px) and (max-width: 1439px) {
+  /*  @media (min-width: 768px) and (max-width: 1439px) {
         max-width: 766px;
     }
     @media (max-width: 767px) {
         max-width: 318px;
-    }
+    }*/
   }
 
 /*    Benefits   */
@@ -244,8 +243,8 @@ display: none;
         transform: translateY(50%);
     }
 
-    &:hover path{
-       transition: all 0.4s ease-in-out;
+    & path{
+       transition: all 0.3s ease-in-out;
     }
 }
 &__button__wrap:hover, &__button__wrap:hover path{

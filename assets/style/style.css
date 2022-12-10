@@ -64,22 +64,18 @@ input, button, textarea, select {
   max-width: 1650px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
   text-align: center;
+  /*  @media (min-width: 768px) and (max-width: 1439px) {
+        max-width: 766px;
+    }
+    @media (max-width: 767px) {
+        max-width: 318px;
+    }*/
 }
 @media (min-width: 1440px) and (max-width: 1919px) {
   .container {
     max-width: 1270px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1439px) {
-  .container {
-    max-width: 766px;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    max-width: 318px;
   }
 }
 
@@ -350,8 +346,8 @@ input, button, textarea, select {
     transform: translateY(50%);
   }
 }
-.benefits__button__wrap:hover path {
-  transition: all 0.4s ease-in-out;
+.benefits__button__wrap path {
+  transition: all 0.3s ease-in-out;
 }
 .benefits__button__wrap:hover, .benefits__button__wrap:hover path {
   color: rgb(63, 184, 173);

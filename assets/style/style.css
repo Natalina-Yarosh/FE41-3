@@ -72,16 +72,6 @@ input, button, textarea, select {
     max-width: 1270px;
   }
 }
-@media (min-width: 768px) and (max-width: 1439px) {
-  .container {
-    max-width: 766px;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    max-width: 318px;
-  }
-}
 
 /*   Header   */
 .header {
@@ -113,9 +103,8 @@ input, button, textarea, select {
   align-items: center;
 }
 .header__head__logo {
-  display: inline-block;
+  display: flex;
   width: 96px;
-  height: 49px;
 }
 .header__head__logo__img {
   height: 100%;
@@ -243,4 +232,7 @@ input, button, textarea, select {
     max-width: 22px;
     max-height: 15px;
   }
+}
+.header__hamburger__lines {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

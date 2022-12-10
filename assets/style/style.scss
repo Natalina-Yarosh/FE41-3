@@ -14,12 +14,12 @@ $Lato: 'Lato', sans-serif;
     @media (min-width: 1440px) and (max-width: 1919px) {
         max-width: 1270px;
     }
-    @media (min-width: 768px) and (max-width: 1439px) {
-        max-width: 766px;
-    }
-    @media (max-width: 767px) {
-        max-width: 318px;
-    }
+    // @media (min-width: 768px) and (max-width: 1439px) {
+    //     max-width: 766px;
+    // }
+    // @media (max-width: 767px) {
+    //     max-width: 318px;
+    // }
   }
   /*   Header   */
   .header {
@@ -49,9 +49,8 @@ background-color: rgba(0, 0, 0, 0.5);
 
    
 &__logo {
-    display: inline-block;
+    display: flex;
     width: 96px;
-    height: 49px;
 
     &__img {
         height: 100%;
@@ -178,6 +177,9 @@ background-color: rgba(0, 0, 0, 0.5);
         display: block;
         max-width: 22px;
         max-height: 15px;
+    }
+    &__lines{
+        display: flex;
     }
 }
 }

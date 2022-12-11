@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Lato&display=swap" rel="stylesheet"
+    />
+    <title>UncleDrew</title>
+  </head>
+  <body>
+    <main>
+      <section class="banner" id="booking">
+        <div class="container">
+          <h1 class="banner__header">запись <span class="banner__header banner__header_back">онлайн</span></h1>
+        </div>
+      </section>  
+      <section class="booking">
+        <div class="container">
+          <div class="booking__wrap booking__wrap-grey">
+            <div class="booking__info">
+              <h3 class="booking__title">стрижка</h3>
+              <p class="booking__subtitle">40 BYN / 45 мин</p>
+            </div>
+            <div class="booking__img">
+              <img class="booking__png-cal" src="images/Calendar.png" alt="calendar" />
+            </div>
+          </div>
+          <div class="booking__wrap booking__wrap-images">
+            <div class="booking__image">
+              <img class="booking__png-men" src="images/0035 копия 1.png" alt="foto" />
+            </div>
+            <div class="booking__buttons">
+              <button class="booking__button">10:00</button>
+              <button class="booking__button">11:00</button>
+              <button class="booking__button">13:00</button>
+              <button class="booking__button">15:00</button>
+              <button class="booking__button">16:00</button>
+              <button class="booking__button">18:00</button>
+              <button class="booking__button">20:00</button>
+              <button class="booking__button">21:00</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <form class="contact__form">
+            <input class="contact__form-input" type="text" placeholder="Имя*" required />
+            <input class="contact__form-input" type="text" placeholder="Фамилия" />
+            <input class="contact__form-input" type="tel" placeholder="Номер телефона*" required />
+            <textarea class="contact__form-textarea" placeholder="Комментарий"></textarea>
+            <div class="contact__form-agreement">
+              <input class="contact__form-radio" type="checkbox" name="agreement" id="agreement" required>
+              <label class="contact__form-text" for="agreement">
+                <div class="contact__form-radio_show"></div>
+                Согласен на обработку персональных данных. <a class="contact__form-text contact__form-text_link"
+                  href="#">Подробнее*</a>
+              </label>
+            </div>
+            <button class="contact__form-btn" type="submit">Записаться</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

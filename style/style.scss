@@ -1,0 +1,551 @@
+
+@import "reset";
+@import "var";
+@mixin containerRules {
+   max-width: 1650px;
+   padding: 0 15px;
+   margin: 0 auto;
+   position: relative;
+   @media (min-width: 769px) and (max-width: 1440px) {
+      max-width: 1270px;
+   }
+}
+.banner {
+   background-image: url(../images/Background-ser:book:cont.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: top;
+   padding: 513px 0 261px;
+   position: relative;
+   overflow: hidden;
+   @media (min-width: 769px) and (max-width: 1440px) {
+      padding: 384.75px 0 196.25px;
+   }
+   @media (min-width: 321px) and (max-width: 768px) {
+      padding: 200px 0 84.6px;
+   }
+   @media (max-width: 320px) {
+      padding: 92px 0 30.89px;
+   }
+   &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.7);
+      filter: blur(200px);
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      border-radius: 50%;
+      width: 110.83%;
+      height: 221.56%;
+      left: -55.42%;
+      top: -55.60%;
+      @media (min-width: 769px) and (max-width: 1440px) {
+         filter: blur(150px);
+      }
+     @media (min-width: 321px) and (max-width: 768px) {
+         left: -13.67%;
+         top: -62.17%;
+         filter: blur(80px);
+      }
+      @media (max-width: 320px) {
+         filter: blur(33.33 px);
+         left: 0;
+         top: -60.27%;
+      }
+   }
+   .container {
+      @include containerRules();
+   }
+   &__header {
+         font-family: $font-Forum;
+         font-size: 70px;
+         line-height: 70px;
+         font-weight: 400;
+         text-transform: uppercase;
+         color: $color-white;
+         max-width: 528px;
+         width: 100%;
+      @media (min-width: 767px) and (max-width: 1440px) {
+         font-size: 52.5px;
+         line-height: 52px;
+         max-width: 396px;
+      }
+      @media (min-width: 321px) and (max-width: 768px) {
+         font-size: 53px;
+         line-height: 53px;
+         max-width: 400px;
+      }
+      @media (max-width: 320px) {
+         font-size: 22px;
+         line-height: 22px;
+         max-width: 166px;
+      }
+      &_back {
+         background-color: $color-primary;
+      }
+   }
+}
+.booking {
+   margin-bottom: 428px;
+   .container {
+      @include containerRules();
+   }
+   &__wrap-grey {
+      display: flex;
+      justify-content: space-between;
+      background: #F8F8F8;
+      border-radius: 32px;
+      padding: 96px 100px 147px 170px;
+      position: relative;
+      z-index: 1;
+      left: 0%;
+      top: -39px;
+      @media (min-width: 769px) and (max-width: 1440px) {
+         border-radius: 32px;
+         padding: 71.75px 0px 0px 92px;
+         top: -24px;
+      }
+
+      @media (min-width: 321px) and (max-width: 768px) {
+         border-radius: 12.8px;
+         padding: 39.87px 0px 0px 26.73px;
+         top: -23.47px;
+         display: block;
+      }
+
+      @media (max-width: 320px) {
+         border-radius: 5.06px;
+         padding: 11px 0px 0px 18.51px;
+         top: -22.89px;
+         display: block;
+      }
+   }
+   &__wrap-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-between;
+      align-items: flex-end;
+      position: absolute;
+      width: 100%;
+      top: 36.08%;
+      left: 0;
+      z-index: 2;
+   }
+   &__image {
+      position: relative;
+      border-radius: 42.10px;
+      overflow: hidden;
+      left: -7.81%;
+      top: 0%;
+   }
+   &__image::before {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+   }
+   &__image::after {
+      content: "";
+      width: 50%;
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-radius: 42.10px;
+      background: $color-primary;
+   }
+   &__png-men {
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      object-position: bottom;
+      z-index: 1;
+   }
+   &__buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 59px;
+      row-gap: 40px;
+      justify-content: end;
+   }
+   &__button {
+      display: block;
+      padding: 13.5px 0;
+      margin: 0 auto;
+      max-width: 153px;
+      width: 100%;
+      font-family: $font-Inter;
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 400;
+      text-align: center;
+      text-decoration: none;
+      background-color: transparent;
+      color: rgba(0, 0, 0, 1);
+      border: 2px solid #000000;
+      border-radius: 16px;
+      cursor: pointer;
+   }
+   &__button:hover {
+      background-color: #3FB8AD;
+   }
+   &__button:active {
+      border: 2px solid transparent;
+      background-color: $color-primary;
+   }
+}
+.contact {
+   margin-bottom: 300px;
+
+   @media (min-width: 769px) and (max-width: 1440px) {
+      margin-bottom: 212.77px;
+   }
+
+   @media (min-width: 321px) and (max-width: 768px) {
+      margin-bottom: 126px;
+   }
+
+   @media (max-width: 320px) {
+      margin-bottom: 70px;
+      background-color: #F8F8F8;
+   }
+   .container {
+      @include containerRules();
+   }
+
+   &__form {
+      background-color: #F8F8F8;
+      border-radius: 32px;
+      padding: 138px;
+
+      @media (min-width: 769px) and (max-width: 1440px) {
+         padding: 111px 105px 114.23px 103.97px;
+         border-radius: 24.47px;
+      }
+
+      @media (min-width: 321px) and (max-width: 768px) {
+         padding: 46px 61.49px 58px 61.51px;
+      }
+
+      @media (max-width: 320px) {
+         padding: 0;
+         background-color: transparent;
+      }
+
+      &-input {
+         max-width: 1344px;
+         background: $color-white;
+         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+         border-radius: 32px;
+         width: 100%;
+         font-family: $font-Lato;
+         font-weight: 400;
+         font-size: 25px;
+         line-height: 25px;
+         padding: 46px 0 45px 52px;
+         margin-bottom: 40px;
+         color: #1f1f1f;
+         border: none;
+         cursor: pointer;
+
+         @media (min-width: 769px) and (max-width: 1440px) {
+            max-width: 1030px;
+            box-shadow: 0px 7.5px 15px rgba(0, 0, 0, 0.02);
+            border-radius: 24px;
+            font-size: 18.75px;
+            line-height: 19px;
+            padding: 34.5px 0 33.5px 39px;
+            margin-bottom: 30px;
+         }
+
+         @media (min-width: 321px) and (max-width: 768px) {
+            max-width: 610px;
+            box-shadow: 0px 4.44px 8.89px rgba(0, 0, 0, 0.02);
+            border-radius: 15px;
+            font-size: 12px;
+            line-height: 12px;
+            padding: 20.61px 0 20.28px 23.1px;
+            margin-bottom: 18px;
+         }
+
+         @media (max-width: 320px) {
+            max-width: 288px;
+            box-shadow: 0px 2.09px 4.19px rgba(0, 0, 0, 0.02);
+            border-radius: 7.07px;
+            font-size: 10px;
+            line-height: 10px;
+            padding: 11.11px 0 10.63px 10.81px;
+            margin-bottom: 13px;
+         }
+      }
+
+      &-input:hover {
+         box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+      }
+
+      &-input:focus {
+         color: $color-primary;
+         border: none;
+         outline: none;
+      }
+
+      &-input::placeholder {
+         color: rgba(47, 47, 47, 0.5);
+      }
+
+      &-textarea {
+         max-width: 1344px;
+         background: $color-white;
+         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+         border-radius: 32px;
+         width: 100%;
+         font-family: $font-Lato;
+         font-weight: 400;
+         font-size: 25px;
+         line-height: 25px;
+         color: #1f1f1f;
+         padding: 46px 0 301px 52px;
+         margin-bottom: 40px;
+         border: none;
+         resize: none;
+         cursor: pointer;
+
+         @media (min-width: 769px) and (max-width: 1440px) {
+            max-width: 1030px;
+            box-shadow: 0px 7.5px 15px rgba(0, 0, 0, 0.02);
+            border-radius: 24px;
+            font-size: 18.75px;
+            line-height: 19px;
+            padding: 34.5px 0 225.5px 39px;
+            margin-bottom: 38px;
+         }
+
+         @media (min-width: 321px) and (max-width: 768px) {
+            max-width: 610px;
+            box-shadow: 0px 4.44px 8.89px rgba(0, 0, 0, 0.02);
+            border-radius: 15px;
+            font-size: 12px;
+            line-height: 12px;
+            padding: 20.4px 0 133.62px 23.1px;
+            margin-bottom: 25px;
+         }
+
+         @media (max-width: 320px) {
+            max-width: 288px;
+            box-shadow: 0px 2.09px 4.19px rgba(0, 0, 0, 0.02);
+            border-radius: 7.07px;
+            font-size: 10px;
+            line-height: 10px;
+            padding: 13.12px 0 80.47px 10.8px;
+            margin-bottom: 21.37px;
+         }
+      }
+
+      &-textarea:hover {
+         box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+      }
+
+      &-textarea:focus {
+         color: $color-primary;
+         border: none;
+         outline: none;
+      }
+
+      &-textarea::placeholder {
+         color: rgba(47, 47, 47, 0.5);
+      }
+
+      &-agreement {
+         margin-bottom: 40px;
+
+         @media (min-width: 769px) and (max-width: 1440px) {
+            margin-bottom: 29.75px;
+         }
+
+         @media (min-width: 321px) and (max-width: 768px) {
+            margin-bottom: 25px;
+         }
+
+         @media (max-width: 320px) {
+            margin-bottom: 52px;
+         }
+      }
+
+      &-radio {
+         display: none;
+      }
+
+      &-radio_show {
+         width: 45px;
+         height: 45px;
+         background: $color-white;
+         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+         border-radius: 8px;
+         border: none;
+         position: relative;
+
+         @media (min-width: 769px) and (max-width: 1440px) {
+            width: 33.75px;
+            height: 33.75px;
+            box-shadow: 0px 7.5px 15px rgba(0, 0, 0, 0.02);
+            border-radius: 6px;
+         }
+
+         @media (min-width: 321px) and (max-width: 768px) {
+            width: 24px;
+            height: 24px;
+            box-shadow: 0px 4.44px 8.89px rgba(0, 0, 0, 0.02);
+            border-radius: 3.56px;
+         }
+
+         @media (max-width: 320px) {
+            width: 16px;
+            height: 16px;
+            box-shadow: 0px 2.09px 4.19px rgba(0, 0, 0, 0.02);
+            border-radius: 1.68px;
+         }
+      }
+
+      &-radio_show::before {
+         content: "";
+         width: 45px;
+         height: 45px;
+         border-radius: 8px;
+         background: $color-primary;
+         display: block;
+         position: absolute;
+         left: 0%;
+         top: 0%;
+         opacity: 0;
+
+         @media (min-width: 769px) and (max-width: 1440px) {
+            width: 33.75px;
+            height: 33.75px;
+            border-radius: 6px;
+         }
+
+         @media (min-width: 321px) and (max-width: 768px) {
+            width: 24px;
+            height: 24px;
+            border-radius: 3.56px;
+         }
+
+         @media (max-width: 320px) {
+            width: 16px;
+            height: 16px;
+            border-radius: 1.68px;
+         }
+      }
+
+      &-radio:checked+&-text &-radio_show::before {
+         opacity: 1;
+      }
+
+      &-text {
+         display: flex;
+         align-items: center;
+         column-gap: 40px;
+         color: rgba(47, 47, 47, 0.5);
+         font-family: $font-Lato;
+         font-weight: 400;
+         font-size: 25px;
+         line-height: 25px;
+
+         @media (min-width: 769px) and (max-width: 1440px) {
+            font-size: 18.75px;
+            line-height: 19px;
+            column-gap: 51.25px;
+         }
+
+         @media (min-width: 321px) and (max-width: 768px) {
+            max-width: 303.59px;
+            flex-wrap: wrap;
+            width: 100%;
+            font-size: 12px;
+            line-height: 12px;
+            column-gap: 28px;
+         }
+
+         @media (max-width: 320px) {
+            font-size: 10px;
+            line-height: 10px;
+            flex-wrap: wrap;
+            column-gap: 13px;
+         }
+      }
+
+      &-text_link {
+         color: #446dff;
+         text-decoration: none;
+      }
+
+      &-btn {
+         display: block;
+         padding: 16.5px 0;
+         margin: 0 auto;
+         max-width: 1344px;
+         width: 100%;
+         font-family: $font-Lato;
+         font-size: 16px;
+         line-height: 24px;
+         font-weight: 400;
+         text-align: center;
+         text-decoration: none;
+         background-color: $color-primary;
+         color: $color-white;
+         border: none;
+         text-transform: uppercase;
+         border-radius: 16px;
+         cursor: pointer;
+         border: 1px solid transparent;
+
+         @media (min-width: 769px) and (max-width: 1440px) {
+            max-width: 1030px;
+            box-shadow: 0px 7.5px 15px rgba(0, 0, 0, 0.02);
+            border-radius: 12px;
+            font-size: 12px;
+            line-height: 18px;
+            padding: 12.5px 0;
+         }
+
+         @media (min-width: 321px) and (max-width: 768px) {
+            max-width: 610px;
+            border-radius: 12px;
+            font-size: 12px;
+            line-height: 18px;
+            padding: 12px 0;
+         }
+
+         @media (max-width: 320px) {
+            max-width: 288px;
+            border-radius: 7px;
+            font-size: 10px;
+            line-height: 15px;
+            padding: 6.5px 0;
+         }
+      }
+
+      &-btn:hover {
+         border: 1px solid #3FB8AD;
+      }
+
+      &-btn:active {
+         border: 2px solid #000000;
+         padding: 15.5px 0;
+
+         @media (min-width: 769px) and (max-width: 1440px) {
+            padding: 11.5px 0;
+         }
+
+         @media (min-width: 321px) and (max-width: 768px) {
+            padding: 11px 0;
+         }
+
+         @media (max-width: 320px) {
+            padding: 5.5px 0;
+         }
+      }
+   }
+}

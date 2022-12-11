@@ -1,0 +1,236 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.banner {
+  background-image: url(../images/Background-main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 380px 0 250px;
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+  .banner {
+    padding: 285px 0 187.5px;
+  }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+  .banner {
+    padding: 409px 0 104.5px;
+  }
+}
+@media (max-width: 320px) {
+  .banner {
+    padding: 199px 0 49.88px;
+  }
+}
+.banner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  filter: blur(200px);
+  width: 100%;
+  height: 137.16%;
+  top: -19.59%;
+  left: -41.88%;
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+  .banner::before {
+    filter: blur(150px);
+  }
+}
+@media (max-width: 768px) {
+  .banner::before {
+    display: none;
+  }
+}
+.banner .container {
+  max-width: 1650px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+  .banner .container {
+    max-width: 1270px;
+  }
+}
+.banner__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.banner__content {
+  max-width: 769px;
+  width: 100%;
+}
+@media (min-width: 321px) and (max-width: 1440px) {
+  .banner__content {
+    max-width: 576.75px;
+  }
+}
+@media (max-width: 320px) {
+  .banner__content {
+    max-width: 284px;
+  }
+}
+.banner__header {
+  font-family: "Forum", sans-serif;
+  font-size: 70px;
+  line-height: 70px;
+  margin-bottom: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media (min-width: 321px) and (max-width: 1440px) {
+  .banner__header {
+    font-size: 53px;
+    line-height: 53px;
+    margin-bottom: 26px;
+  }
+}
+@media (max-width: 320px) {
+  .banner__header {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 6px;
+    max-width: 240px;
+    width: 100%;
+  }
+}
+.banner__header-back {
+  background-color: #3e8982;
+}
+.banner__text {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 23px;
+  font-weight: 400;
+  margin-bottom: 68px;
+  max-width: 536px;
+  width: 100%;
+}
+@media (min-width: 321px) and (max-width: 1440px) {
+  .banner__text {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 49.5px;
+    max-width: 417px;
+  }
+}
+@media (max-width: 320px) {
+  .banner__text {
+    font-size: 9px;
+    line-height: 12px;
+    margin-bottom: 0;
+    max-width: 284px;
+  }
+}
+.banner__btn {
+  display: block;
+  padding: 17.5px 0;
+  max-width: 254px;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #3e8982;
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  cursor: pointer;
+}
+@media (min-width: 321px) and (max-width: 1440px) {
+  .banner__btn {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 13px 0;
+    max-width: 191px;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 320px) {
+  .banner__btn {
+    display: none;
+  }
+}
+.banner__btn:hover {
+  border: 1px solid #3FB8AD;
+}
+.banner__btn:active {
+  border: 2px solid #000000;
+  padding: 16.5px 0;
+}
+@media (min-width: 321px) and (max-width: 1440px) {
+  .banner__btn:active {
+    padding: 12px 0;
+  }
+}
+.banner__offer {
+  padding: 74px 20px 40px 40px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  max-width: 279px;
+  width: 100%;
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+  .banner__offer {
+    margin-bottom: 1.5px;
+    max-width: 209.25px;
+    padding: 55.5px 15px 30.75px 30px;
+  }
+}
+@media (max-width: 768px) {
+  .banner__offer {
+    display: none;
+  }
+}
+.banner__offer-promo {
+  margin-bottom: 30px;
+}
+.banner__offer-title {
+  font-family: "Forum", sans-serif;
+  font-size: 35px;
+  color: #ffffff;
+  line-height: 35px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+  .banner__offer-title {
+    font-size: 26.25px;
+    line-height: 26.25px;
+    margin-bottom: 11.75px;
+  }
+}
+.banner__offer-text {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 27px;
+  font-weight: 400;
+  max-width: 183px;
+  width: 100%;
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+  .banner__offer-text {
+    font-size: 13.5px;
+    line-height: 20px;
+    max-width: 142px;
+  }
+}/*# sourceMappingURL=style.css.map */

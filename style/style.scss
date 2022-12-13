@@ -91,7 +91,8 @@
       @include containerRules();
    }
    &__wrap-grey {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       justify-content: space-between;
       background: #F8F8F8;
       border-radius: 32px;
@@ -120,9 +121,47 @@
          display: block;
       }
    }
+   &__title {
+      font-family: $font-Forum;
+      font-size: 70px;
+      line-height: 70px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #1f1f1f;
+      margin-bottom: 18px;
+      &__title:last-of-type {
+         margin-bottom: 7px;
+      }
+   }
+   &__subtitle {
+      font-family: $font-Lato;
+      font-size: 25px;
+      line-height: 25px;
+      font-weight: 400;
+      color:rgba(47, 47, 47, 0.7);
+   }
+   &__img{
+      position: relative;
+   }
+   &__img::before {
+      content: "";
+      display: block;
+      padding-top: 92.99%;
+      @media (max-width: 320px) {
+         padding-top: 93.15%;
+      }
+   }
+   &__png-cal {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+   }
    &__wrap-images {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 0.5fr;
       justify-content: space-between;
       align-items: flex-end;
       position: absolute;
@@ -133,36 +172,49 @@
    }
    &__image {
       position: relative;
-      border-radius: 42.10px;
+      border-radius: 42.1px;
       overflow: hidden;
-      left: -7.81%;
-      top: 0%;
+      max-width: 1006px;
+      width: 100%;
    }
    &__image::before {
       content: "";
       display: block;
-      padding-bottom: 100%;
+      padding-bottom: 85.39%;
    }
    &__image::after {
       content: "";
-      width: 50%;
+      width: 100%;
       display: block;
       position: absolute;
       left: 0;
       bottom: 0;
+      height: 77.77%;
       border-radius: 42.10px;
       background: $color-primary;
    }
    &__png-men {
       position: absolute;
       bottom: 0%;
-      left: 0%;
+      left: 0;
       object-fit: cover;
       height: 100%;
       width: 100%;
       object-position: bottom;
       z-index: 1;
    }
+   &__wrapper {
+      position: relative;
+   }
+   &__text {
+      position: absolute;
+      color: white;
+      z-index: 1;
+      bottom: 5.54%;
+      right: 27.54%;
+
+   }
+
    &__buttons {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;

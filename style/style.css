@@ -121,7 +121,8 @@
   }
 }
 .booking__wrap-grey {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   background: #F8F8F8;
   border-radius: 32px;
@@ -154,9 +155,50 @@
     display: block;
   }
 }
+.booking__title {
+  font-family: "Forum", sans-serif;
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #1f1f1f;
+  margin-bottom: 18px;
+}
+.booking__title__title:last-of-type {
+  margin-bottom: 7px;
+}
+.booking__subtitle {
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 400;
+  color: rgba(47, 47, 47, 0.7);
+}
+.booking__img {
+  position: relative;
+}
+.booking__img::before {
+  content: "";
+  display: block;
+  padding-top: 92.99%;
+}
+@media (max-width: 320px) {
+  .booking__img::before {
+    padding-top: 93.15%;
+  }
+}
+.booking__png-cal {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
 .booking__wrap-images {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 0.5fr;
   justify-content: space-between;
   align-items: flex-end;
   position: absolute;
@@ -169,28 +211,29 @@
   position: relative;
   border-radius: 42.1px;
   overflow: hidden;
-  left: -7.81%;
-  top: 0%;
+  max-width: 1006px;
+  width: 100%;
 }
 .booking__image::before {
   content: "";
   display: block;
-  padding-bottom: 100%;
+  padding-bottom: 85.39%;
 }
 .booking__image::after {
   content: "";
-  width: 50%;
+  width: 100%;
   display: block;
   position: absolute;
   left: 0;
   bottom: 0;
+  height: 77.77%;
   border-radius: 42.1px;
   background: #3e8982;
 }
 .booking__png-men {
   position: absolute;
   bottom: 0%;
-  left: 0%;
+  left: 0;
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
@@ -198,6 +241,16 @@
   -o-object-position: bottom;
      object-position: bottom;
   z-index: 1;
+}
+.booking__wrapper {
+  position: relative;
+}
+.booking__text {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  bottom: 5.54%;
+  right: 27.54%;
 }
 .booking__buttons {
   display: grid;

@@ -127,10 +127,22 @@
       line-height: 70px;
       font-weight: 400;
       text-transform: uppercase;
-      color: #1f1f1f;
+      color: #2f2f2f;
       margin-bottom: 18px;
-      &__title:last-of-type {
-         margin-bottom: 7px;
+      @media (min-width: 769px) and (max-width: 1440px) {
+         font-size: 53px;
+         line-height: 53px;
+         margin-bottom: 18px;
+      }
+      @media (min-width: 321px) and (max-width: 768px) {
+         font-size: 35px;
+         line-height: 35px;
+         margin-bottom: 12.2px;
+      }
+      @media (max-width: 320px) {
+         font-size: 20px;
+         line-height: 30px;
+         margin-bottom: 0px;
       }
    }
    &__subtitle {
@@ -139,6 +151,18 @@
       line-height: 25px;
       font-weight: 400;
       color:rgba(47, 47, 47, 0.7);
+      @media (min-width: 769px) and (max-width: 1440px) {
+         font-size: 19px;
+         line-height: 19px;
+      }
+      @media (min-width: 321px) and (max-width: 768px) {
+         font-size: 13px;
+         line-height: 13px;
+      }
+      @media (max-width: 320px) {
+         font-size: 8px;
+         line-height: 8px;
+      }
    }
    &__img{
       position: relative;
@@ -169,6 +193,9 @@
       top: 36.08%;
       left: 0;
       z-index: 2;
+      @media (min-width: 321px) and (max-width: 768px) {
+         display: block;
+      }
    }
    &__image {
       position: relative;
@@ -212,15 +239,64 @@
       z-index: 1;
       bottom: 5.54%;
       right: 27.54%;
-
+      &-title {
+         font-family: $font-Forum;
+         font-size: 70px;
+         line-height: 70px;
+         font-weight: 400;
+         text-transform: uppercase;
+         color: $color-white;
+         margin-bottom: 7px;
+         @media (min-width: 767px) and (max-width: 1440px) {
+            font-size: 52.5px;
+            line-height: 52px;
+            margin-bottom: 5.75px;
+         }
+         @media (min-width: 321px) and (max-width: 768px) {
+            font-size: 52.5px;
+            line-height: 52px;
+            margin-bottom: 0px;
+         }
+         @media (max-width: 320px) {
+            font-size: 20.74px;
+            line-height: 21px;
+            margin-bottom: 0px;
+         }
+      }
+      &-subtitle {
+         font-family: $font-Forum;
+         font-size: 30px;
+         line-height: 30px;
+         font-weight: 400;
+         color: $color-white;
+         @media (min-width: 321px) and (max-width: 1440px) {
+            font-size: 22.5px;
+            line-height: 22px;
+         }
+         @media (max-width: 320px) {
+            font-size: 8.89px;
+            line-height: 9px;
+         }
+      }
    }
-
    &__buttons {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       column-gap: 59px;
       row-gap: 40px;
       justify-content: end;
+      @media (min-width: 769px) and (max-width: 1440px) {
+         column-gap: 30px;
+         row-gap: 30px;
+      }
+      @media (min-width: 321px) and (max-width: 768px) {
+         column-gap: 46.9px;
+         row-gap: 31.79px;
+      }
+      @media (max-width: 320px) {
+         column-gap: 21.54px;
+         row-gap: 14.36px;
+      }
    }
    &__button {
       display: block;
@@ -235,17 +311,49 @@
       text-align: center;
       text-decoration: none;
       background-color: transparent;
-      color: rgba(0, 0, 0, 1);
+      color: #000000;
       border: 2px solid #000000;
       border-radius: 16px;
       cursor: pointer;
+      @media (min-width: 769px) and (max-width: 1440px) {
+         padding: 10.12px 0;
+         max-width: 114.75px;
+         font-size: 23px;
+         line-height: 28px;
+         border: 1px solid #000000;
+         border-radius: 12px;
+      }
+      @media (min-width: 321px) and (max-width: 768px) {
+         padding: 10.63px 0;
+         max-width: 121.62px;
+         font-size: 24.38px;
+         line-height: 30px;
+         border: 1px solid #000000;
+         border-radius: 12.7px;
+      }
+      @media (max-width: 320px) {
+         padding: 4.51px 0;
+         max-width: 56px;
+         font-size: 12px;
+         line-height: 15px;
+         border: 0.49px solid #000000;
+         border-radius: 5.84px;
+      }
    }
    &__button:hover {
       background-color: #3FB8AD;
+      color: $color-white;
    }
    &__button:active {
       border: 2px solid transparent;
       background-color: $color-primary;
+      color: $color-white;
+      @media (min-width: 321px) and (max-width: 1440px) {
+         border: 1px solid transparent
+      }
+      @media (max-width: 320px) {
+         border: 00.49px solid transparent
+      }
    }
 }
 .contact {

@@ -1,0 +1,86 @@
+
+@import "reset";
+@import "var";
+@mixin containerRules {
+   max-width: 1650px;
+   padding: 0 15px;
+   margin: 0 auto;
+   position: relative;
+   @media (min-width: 769px) and (max-width: 1440px) {
+      max-width: 1245px;
+   }
+}
+.banner {
+   background-image: url(../images/Background-ser:book:cont.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: top;
+   padding: 625px 0 149px;
+   position: relative;
+   overflow: hidden;
+   @media (min-width: 769px) and (max-width: 1440px) {
+      padding: 468px 0 132.25px;
+   }
+   @media (min-width: 321px) and (max-width: 768px) {
+      padding: 197px 0 97.73px;
+   }
+   @media (max-width: 320px) {
+      padding: 90.94px 0 29.95px;
+   }
+   &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.7);
+      filter: blur(200px);
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      border-radius: 50%;
+      width: 110.83%;
+      height: 221.56%;
+      left: -55.42%;
+      top: -55.60%;
+      @media (min-width: 769px) and (max-width: 1440px) {
+         filter: blur(150px);
+      }
+     @media (min-width: 321px) and (max-width: 768px) {
+         filter: blur(80px);
+         left: 0;
+         top: -60.14%;
+      }
+      @media (max-width: 320px) {
+         filter: blur(33.33px);
+         left: 0;
+         top: -60.14%;
+      }
+   }
+   .container {
+      @include containerRules();
+   }
+   &__header {
+         font-family: $font-Forum;
+         font-size: 70px;
+         line-height: 70px;
+         font-weight: 400;
+         max-width: 291px;
+         width: 100%;
+         text-align: center;
+         text-transform: uppercase;
+         color: $color-white;
+         background-color: $color-primary;
+      @media (min-width: 767px) and (max-width: 1440px) {
+         font-size: 52.5px;
+         line-height: 52px;
+         max-width: 218.25px;
+      }
+      @media (min-width: 321px) and (max-width: 768px) {
+         font-size: 53px;
+         line-height: 53px;
+         max-width: 195px;
+      }
+      @media (max-width: 320px) {
+         font-size: 22px;
+         line-height: 22px;
+         max-width: 89px;
+      }
+   }
+}

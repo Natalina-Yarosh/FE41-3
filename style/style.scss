@@ -1,0 +1,148 @@
+
+@import "reset";
+@import "var";
+@mixin containerRules {
+   max-width: 1650px;
+   padding: 0 15px;
+   margin: 0 auto;
+   position: relative;
+   @media (min-width: 769px) and (max-width: 1440px) {
+      max-width: 1255px;
+   }
+}
+.banner {
+   background-image: url(../images/Background-maters.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: top;
+   padding: 343px 0 149px;
+   position: relative;
+   overflow: hidden;
+   @media (min-width: 769px) and (max-width: 1440px) {
+      padding: 257.25px 0 111.25px;
+   }
+   @media (min-width: 321px) and (max-width: 768px) {
+      padding: 177px 57.4px 48.6px 0;
+   }
+   @media (max-width: 320px) {
+      padding: 92px 0 27px;
+   }
+   &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.7);
+      filter: blur(200px);
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      width: 140.63%;
+      height: 221.56%;
+      left: -16.62%;
+      bottom: 8.89%;
+      @media (min-width: 769px) and (max-width: 1440px) {
+         filter: blur(150px)
+      }
+      @media (min-width: 321px) and (max-width: 768px) {
+         filter: blur(80px)
+      }
+      @media (max-width: 320px) {
+         filter: blur(33.41px)
+      }
+   }
+   .container {
+      @include containerRules();
+   }
+   &__wrap {
+      display: block;
+      @media (min-width: 321px) and (max-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row-reverse;
+
+   }
+   }
+   &__header {
+      font-family: $font-Forum;
+      font-size: 70px;
+      line-height: 70px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $color-white;
+      @media (min-width: 321px) and (max-width: 1440px) {
+         font-size: 53px;
+         line-height: 53px;
+      }
+      @media (max-width: 320px) {
+         font-size: 22px;
+         line-height: 22px;
+      }
+   }
+   &__header-back {
+      background-color: $color-primary;
+   }
+   &__offer {
+      padding: 74px 20px 40px 40px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      max-width: 279px;
+      width: 100%;
+      margin-bottom: 2px;
+      margin-left: auto;
+      @media (min-width: 769px) and (max-width: 1440px) {
+         margin-bottom: 1.5px;
+         max-width: 209.25px;
+         padding: 55.5px 22.25px 30.75px 30px;
+         border-radius: 12px;
+         border: 0.75px solid rgba(255, 255, 255, 0.1);
+         backdrop-filter: blur(15px);
+      }
+      @media (min-width: 321px) and (max-width: 768px) {
+         max-width: 111.6px;
+         padding: 21px 3.6px 24px 16px;
+         margin-bottom: 0px;
+         border-radius: 6.4px;
+         border: 0.4px solid rgba(255, 255, 255, 0.1);
+         backdrop-filter: blur(8px);
+      }
+      @media (max-width: 320px) {
+         display: none;
+      }
+      &-title {
+         font-family: $font-Forum;
+         font-size: 35px;
+         color: $color-white;
+         line-height: 35px;
+         font-weight: 400;
+         margin-bottom: 15px;
+         @media (min-width: 769px) and (max-width: 1440px) {
+            font-size: 26.25px;
+            line-height: 26.25px;
+            margin-bottom: 11.75px;
+         }
+         @media (min-width: 321px) and (max-width: 768px) {
+            font-size: 14px;
+            line-height: 14px;
+            margin-bottom: 6px;
+         }
+      }
+      &-text {
+         font-family: $font-Lato;
+         font-size: 18px;
+         color: $color-white;
+         line-height: 27px;
+         font-weight: 400;
+         max-width: 536px;
+         width: 100%;
+         @media (min-width: 769px) and (max-width: 1440px) {
+            font-size: 13.5px;
+            line-height: 20px;
+         }
+         @media (min-width: 321px) and (max-width: 768px) {
+            font-size: 7px;
+            line-height: 10px;
+         }
+      }
+   }
+}

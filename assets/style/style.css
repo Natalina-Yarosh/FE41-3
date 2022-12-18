@@ -84,68 +84,73 @@ input, button, textarea, select {
   border-radius: 32px;
   background-color: rgb(248, 248, 248);
   margin-bottom: 300px;
+  padding: 126px 0;
 }
 @media (min-width: 1440px) and (max-width: 1919px) {
   .benefits__container {
     margin-bottom: 230px;
+    padding: 94px 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .benefits__container {
     margin-bottom: 0;
+    padding: 56px 0;
   }
 }
 @media (max-width: 767px) {
   .benefits__container {
     margin-bottom: 20px;
+    padding: 25px 0 0 0;
   }
 }
 .benefits__wrap {
   max-width: 1187px;
   width: 100%;
   margin: 0 auto;
-  padding: 126px 0;
   text-align: left;
 }
 @media (min-width: 1440px) and (max-width: 1919px) {
   .benefits__wrap {
     max-width: 890px;
-    padding: 94px 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .benefits__wrap {
     max-width: 550px;
-    padding: 56px 0;
     text-align: center;
   }
 }
 @media (max-width: 767px) {
   .benefits__wrap {
     max-width: 288px;
-    padding: 25px 0 0 0;
     text-align: center;
   }
 }
 .benefits__head {
-  margin: 0 auto;
   margin-bottom: 70px;
-  text-align: left;
   border-bottom: 1px solid #3E8982;
+  padding-bottom: 70px;
+  text-align: left;
 }
 @media (min-width: 1440px) and (max-width: 1919px) {
   .benefits__head {
     margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .benefits__head {
+    margin-bottom: 45px;
     border-bottom: none;
+    padding-bottom: 0;
   }
 }
 @media (max-width: 767px) {
   .benefits__head {
+    margin-bottom: 22px;
     border-bottom: none;
+    padding-bottom: 0;
   }
 }
 .benefits__head__title {
@@ -178,27 +183,23 @@ input, button, textarea, select {
   line-height: 55px;
   letter-spacing: 0em;
   color: #2F2F2F;
-  margin-bottom: 70px;
 }
 @media (min-width: 1440px) and (max-width: 1919px) {
   .benefits__head__text {
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 50px;
   }
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .benefits__head__text {
     font-size: 41px;
     line-height: 41px;
-    margin-bottom: 45px;
   }
 }
 @media (max-width: 767px) {
   .benefits__head__text {
     font-size: 17px;
     line-height: 17px;
-    margin-bottom: 32px;
   }
 }
 .benefits__pluses {
@@ -282,25 +283,10 @@ input, button, textarea, select {
     line-height: 9px;
   }
 }
-.benefits__button {
-  display: inline-flex;
-  justify-content: center;
-}
-@media (min-width: 768px) and (max-width: 1439px) {
-  .benefits__button {
-    max-width: 191px;
-    width: 100%;
-  }
-}
-@media (max-width: 767px) {
-  .benefits__button {
-    max-width: 90px;
-    width: 100%;
-  }
-}
 .benefits__button__wrap {
   border: 1px solid transparent;
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   -moz-column-gap: 15px;
        column-gap: 15px;
@@ -328,6 +314,7 @@ input, button, textarea, select {
     text-transform: uppercase;
     background-color: #3E8982;
     border-radius: 12px;
+    max-width: 191px;
     width: 100%;
     display: inline-block;
   }
@@ -341,6 +328,7 @@ input, button, textarea, select {
     text-transform: uppercase;
     background-color: #3E8982;
     border-radius: 5px;
+    max-width: 90px;
     width: 100%;
     display: inline-block;
     transform: translateY(50%);

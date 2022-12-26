@@ -18,7 +18,7 @@
     @media (max-width: 1024px) and (min-width: 768px) {
         padding: 24px 0 50px;
     }
-    @media (max-width: 320px) {
+    @media (max-width: 767px) and (min-width: 320px) {
         border-radius: 32px 32px 0px 0px;
     }
     .footer__grid {
@@ -31,7 +31,10 @@
             display: block;
             text-align: center;
         }
-        @media (max-width: 320px) {
+        @media (max-width: 767px) and (min-width: 320px) {
+            display: block;
+            text-align: center;
+            align-items: center;
         }
         .footer__logo-wrap {
             @media (max-width: 1024px) and (min-width: 768px) {
@@ -40,7 +43,7 @@
                 max-width: 72px;
                 margin: 0 auto 28px;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
                 margin-bottom: 60px;
                 display: flex;
                 justify-content: center;
@@ -66,7 +69,7 @@
                 margin-bottom: 30px;
                 padding: 0 15px 30px;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
                 flex-direction: column;
                 row-gap: 60px;
                 border-bottom: none;
@@ -95,9 +98,12 @@
                 column-gap: 26px;
                 max-width: 100%;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
+                border-bottom: none;
                 flex-direction: column;
                 row-gap: 60px;
+                max-width: 100%;
+                margin-bottom: 0;
             }
         }
         .footer__wrap-menu {
@@ -108,7 +114,8 @@
             @media (max-width: 1024px) and (min-width: 768px) {
                 margin-bottom: 0;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
+                margin-bottom: 0;
             }
         }
         .footer__wrap-help {
@@ -119,14 +126,15 @@
             @media (max-width: 1024px) and (min-width: 768px) {
                 margin-bottom: 0;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
+                margin-bottom: 0;
             }
         }
         .footer__wrap-heading {
             font-family: 'Lato',sans-serif;
             font-weight: 600;
             font-size: 16px;
-            line-height: 150%;
+            line-height: 18px;
             letter-spacing: 0.01em;
             text-transform: uppercase;
             color: #2F2F2F;
@@ -136,9 +144,11 @@
                 margin-bottom: 18px;
             }
             @media (max-width: 1024px) and (min-width: 768px) {
-                
+                font-size: 12px;
+                margin-bottom: 18px;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
+                font-size: 12px;
                 margin-bottom: 10px
             }
         }
@@ -151,9 +161,9 @@
                 margin-bottom: 15px;
             }
             @media (max-width: 1024px) and (min-width: 768px) {
-                
+                margin-bottom: 15px;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
                 margin-bottom: 10px
             }
             &:last-of-type {
@@ -165,7 +175,7 @@
             font-family: 'Lato',sans-serif;
             font-weight: 400;
             font-size: 16px;
-            line-height: 150%;
+            line-height: 18px;
             letter-spacing: 0.01em;
             text-transform: uppercase;
             color: #2F2F2F;
@@ -173,9 +183,11 @@
                 font-size: 12px;
             }
             @media (max-width: 1024px) and (min-width: 768px) {
+                font-size: 12px;
                 
             }
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
+                font-size: 12px;
             }
             
         }
@@ -199,9 +211,14 @@
                 padding-bottom: 0;
                 column-gap: 26px;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
+                display: flex;
                 flex-direction: column;
                 row-gap: 60px;
+                margin-bottom: 0;
+                max-width: 100%;
+                padding-bottom: 0px;
+                border-bottom: none;
             }
         }
         .footer__wrap-adress {
@@ -212,14 +229,15 @@
             @media (max-width: 1024px) and (min-width: 768px) {
                 margin-bottom: 0;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
+                margin-bottom: 0;
             }
         }
         .footer__city{
             font-family: 'Lato',sans-serif;
             font-weight: 400;
             font-size: 16px;
-            line-height: 150%;
+            line-height: 18px;
             letter-spacing: 0.01em;
             text-transform: lowercase;
             color: #2F2F2F;
@@ -231,7 +249,7 @@
             @media (max-width: 1024px) and (min-width: 768px) {
                 margin-bottom: 14px;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
                 margin-bottom: 10px;
             }
         }
@@ -239,7 +257,7 @@
             font-family: 'Lato',sans-serif;
             font-weight: 400;
             font-size: 15px;
-            line-height: 150%;
+            line-height: 18px;
             letter-spacing: 0.01em;
             color: rgba(60, 61, 61, 0.5);
             margin-bottom: 50px;
@@ -248,9 +266,12 @@
                 margin-bottom: 37px;
             }
             @media (max-width: 1024px) and (min-width: 768px) {
+                font-size: 11px;
                 margin-bottom: 0;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
+                font-size: 12px;
+                margin-bottom: 0;
             }
         }
         .footer__socials {
@@ -260,7 +281,7 @@
             display: flex;
             column-gap: 20px;
             align-items: center;
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
                 justify-content: center;
             }
         }
@@ -275,10 +296,13 @@
                 width: 22px;
                 height: 22px;
             }
-            @media (max-width: 768px) {
-                
+            @media (max-width: 1024px) and (min-width: 768px) {
+                width: 22px;
+                height: 22px;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
+                width: 23px;
+                height: 23px;
             }
         }
         .footer__social-icon {
@@ -293,7 +317,7 @@
                 column-gap: 15px;
                 padding: 0 15px;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
                 flex-direction: column;
                 row-gap: 8px;
             }
@@ -313,7 +337,7 @@
                 max-width: 100%;
                 column-gap: 7px;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
                 max-width: 100%;
                 flex-direction: column;
                 row-gap: 8px;
@@ -323,32 +347,34 @@
             font-family: 'Lato' , sans-serif;
             font-weight: 400;
             font-size: 15px;
-            line-height: 150%;
+            line-height: 14px;
             letter-spacing: 0.01em;
             color: rgba(60, 61, 61, 0.4);
             @media (max-width: 1440px) and (min-width: 1025px) {
                 font-size: 11px;
             }
-            @media (max-width: 768px) {
-                
+            @media (max-width: 1024px) and (min-width: 768px) {
+                font-size: 11px;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
+                font-size: 9px;
             }
         }
         .footer__wrap-politics {
             font-family: 'Lato', sans-serif;
             font-weight: 400;
             font-size: 15px;
-            line-height: 150%;
+            line-height: 14px;
             letter-spacing: 0.01em; 
             color: rgba(60, 61, 61, 0.4);
             @media (max-width: 1440px) and (min-width: 1025px) {
                 font-size: 11px;
             }
-            @media (max-width: 768px) {
-                
+            @media (max-width: 1024px) and (min-width: 768px) {
+                font-size: 11px;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
+                font-size: 9px;
             }
         }
         .footer__wrap-author {
@@ -362,7 +388,7 @@
                 max-width: 100%;
                 text-align: right;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
                 max-width: 100%;
                 flex-direction: column;
                 row-gap: 8px;
@@ -372,16 +398,17 @@
             font-family: 'Lato', sans-serif;
             font-weight: 400;
             font-size: 15px;
-            line-height: 150%;
+            line-height: 14px;
             letter-spacing: 0.01em;
             color: rgba(60, 61, 61, 0.4);
             @media (max-width: 1440px) and (min-width: 1025px) {
                 font-size: 11px;
             }
-            @media (max-width: 768px) {
-                
+            @media (max-width: 1024px) and (min-width: 768px) {
+                font-size: 11px;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 767px) and (min-width: 320px) {
+                font-size: 9px;
             }
         }
     }

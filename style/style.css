@@ -14,6 +14,21 @@
 .reviews {
   margin-bottom: 300px;
 }
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .reviews {
+    margin-bottom: 216px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .reviews {
+    margin-bottom: 150px;
+  }
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .reviews {
+    margin-bottom: 99px;
+  }
+}
 .reviews .mySwiper .review {
   display: flex;
   justify-content: space-between;
@@ -22,6 +37,16 @@
 @media (max-width: 1440px) and (min-width: 1025px) {
   .reviews .mySwiper .review {
     margin-bottom: 60px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .reviews .mySwiper .review {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .reviews .mySwiper .review {
+    margin-bottom: 0;
   }
 }
 .reviews .mySwiper .review__description {
@@ -39,13 +64,15 @@
 @media (max-width: 1024px) and (min-width: 768px) {
   .reviews .mySwiper .review__description {
     max-width: 257px;
-    margin-top: 21px;
+    padding-top: 21px;
+    margin-top: 0;
   }
 }
 @media (max-width: 767px) and (min-width: 320px) {
   .reviews .mySwiper .review__description {
     max-width: 100%;
-    margin-top: 21px;
+    padding-top: 21px;
+    margin-top: 0;
   }
 }
 .reviews .mySwiper .review__description-title {
@@ -196,9 +223,11 @@
   .reviews .mySwiper .swiper__button-wrap {
     position: absolute;
     top: 151px;
-    left: 31px;
-    -moz-column-gap: 10px;
-         column-gap: 10px;
+    -moz-column-gap: 39px;
+         column-gap: 39px;
+    left: 0;
+    width: 50%;
+    justify-content: center;
   }
 }
 .reviews .mySwiper .swiper__button-wrap .swiper-button-next, .reviews .mySwiper .swiper__button-wrap .swiper-button-prev {

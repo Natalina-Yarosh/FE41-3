@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1650px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container__haircut {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.haircut {
+  position: relative;
+  margin-bottom: 280px;
+}
+.haircut .swiper {
+  position: absolute;
+  width: 43%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.haircut .swiper .swiper-slide-image {
+  height: 100%;
+}
+.haircut .swiper .slide__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 32px 32px 0px;
+}
+.haircut .swiper .swiper-horizontal.swiper-pagination-bullets, .haircut .swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: 10px;
+}
+.haircut .swiper .swiper-horizontal.swiper-pagination-bullets .swiper-pagination-bullet, .haircut .swiper .swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
+  width: 150px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+.haircut .swiper .swiper-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:hover, .haircut .swiper .swiper-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:active, .haircut .swiper .swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet:hover, .haircut .swiper .swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet:active {
+  color: #FFFFFF;
+  background: #FFFFFF;
+  opacity: 2;
+}
+.haircut .haircut__wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+.haircut .haircut__wrapper .haircut__title {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #3E8982;
+  margin-bottom: 28px;
+}
+.haircut .haircut__wrapper .haircut__text {
+  font-family: "Forum";
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 100%;
+  color: #2F2F2F;
+  margin-bottom: 18px;
+}
+.haircut .haircut__wrapper .haircut__description {
+  position: relative;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #3C3D3D;
+  margin-bottom: 63px;
+}
+.haircut .haircut__wrapper .haircut__description::after {
+  content: "";
+  display: block;
+  border: 1px solid #3E8982;
+  position: absolute;
+  width: 100%;
+  transform: translateY(40px);
+}
+.haircut .haircut__wrapper .haircut__clients {
+  display: flex;
+}
+.haircut .haircut__wrapper .haircut__clients .haircut__client {
+  max-width: 185px;
+  width: 100%;
+  margin-bottom: 80px;
+}
+.haircut .haircut__wrapper .haircut__clients .haircut__client .haircut__client-number {
+  font-family: "Forum";
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 100%;
+  color: #3E8982;
+}
+.haircut .haircut__wrapper .haircut__clients .haircut__client .haircut__client-text {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: rgba(60, 61, 61, 0.7);
+}
+.haircut .haircut__wrapper .haircut__button {
+  display: inline-flex;
+  gap: 15px;
+  align-items: center;
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #3E8982;
+}
+
+.reviews {
+  margin-bottom: 300px;
+}
+.reviews .mySwiper .review {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .reviews .mySwiper .review {
+    margin-bottom: 60px;
+  }
+}
+.reviews .mySwiper .review__description {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  max-width: 692px;
+  width: 100%;
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .reviews .mySwiper .review__description {
+    max-width: 519px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .reviews .mySwiper .review__description {
+    max-width: 257px;
+    margin-top: 21px;
+  }
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .reviews .mySwiper .review__description {
+    max-width: 100%;
+    margin-top: 21px;
+  }
+}
+.reviews .mySwiper .review__description-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #3E8982;
+  margin-bottom: 50px;
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .reviews .mySwiper .review__description-title {
+    font-size: 13px;
+    margin-bottom: 37px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .reviews .mySwiper .review__description-title {
+    display: none;
+  }
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .reviews .mySwiper .review__description-title {
+    display: none;
+  }
+}
+.reviews .mySwiper .review__description-text {
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 120%;
+  color: #2F2F2F;
+  margin-bottom: 60px;
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .reviews .mySwiper .review__description-text {
+    font-size: 41px;
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .reviews .mySwiper .review__description-text {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .reviews .mySwiper .review__description-text {
+    font-size: 11px;
+    margin-bottom: 9px;
+  }
+}
+.reviews .mySwiper .review__description-name {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: rgba(60, 61, 61, 0.7);
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .reviews .mySwiper .review__description-name {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .reviews .mySwiper .review__description-name {
+    font-size: 8px;
+  }
+}
+.reviews .mySwiper .review__wrap-image {
+  max-width: 590px;
+  width: 100%;
+  position: relative;
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .reviews .mySwiper .review__wrap-image {
+    max-width: 440px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .reviews .mySwiper .review__wrap-image {
+    max-width: 409px;
+  }
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .reviews .mySwiper .review__wrap-image {
+    max-width: 100%;
+  }
+}
+.reviews .mySwiper .review__wrap-image::before {
+  content: "";
+  display: block;
+  padding-bottom: 113%;
+}
+.reviews .mySwiper .review__wrap-image::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #3E8982;
+  border-radius: 32px 32px 32px 0px;
+  bottom: 0;
+  right: 0;
+  width: 88%;
+  height: 85%;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .reviews .mySwiper .review__wrap-image::after {
+    border-radius: 24px;
+    width: 94%;
+    height: 96%;
+  }
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .reviews .mySwiper .review__wrap-image::after {
+    border-radius: 10px;
+    width: 94%;
+    height: 96%;
+  }
+}
+.reviews .mySwiper .review__wrap-image .review__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+.reviews .mySwiper .swiper__button-wrap {
+  display: flex;
+  flex-direction: row-reverse;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .reviews .mySwiper .swiper__button-wrap {
+    position: absolute;
+    top: 208px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .reviews .mySwiper .swiper__button-wrap {
+    position: absolute;
+    top: 151px;
+    left: 31px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+}
+.reviews .mySwiper .swiper__button-wrap .swiper-button-next, .reviews .mySwiper .swiper__button-wrap .swiper-button-prev {
+  position: relative;
+  cursor: pointer;
+  width: 31px;
+  height: 14px;
+  margin-top: 0;
+  right: 0;
+  left: 0;
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .reviews .mySwiper .swiper__button-wrap .swiper-button-next, .reviews .mySwiper .swiper__button-wrap .swiper-button-prev {
+    width: 23px;
+    height: 11px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .reviews .mySwiper .swiper__button-wrap .swiper-button-next, .reviews .mySwiper .swiper__button-wrap .swiper-button-prev {
+    margin: 0;
+    width: 23px;
+    height: 11px;
+  }
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .reviews .mySwiper .swiper__button-wrap .swiper-button-next, .reviews .mySwiper .swiper__button-wrap .swiper-button-prev {
+    margin: 0;
+    width: 13px;
+    height: 6px;
+  }
+}
+.reviews .mySwiper .swiper__button-wrap .swiper-button-next::after, .reviews .mySwiper .swiper__button-wrap .swiper-button-prev::after {
+  display: none;
+  content: none;
+}/*# sourceMappingURL=style.css.map */
